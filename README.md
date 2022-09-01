@@ -14,7 +14,6 @@ Template for vite, React + tailwindcss + TypeScript projects with some tools pre
 - [tailwindcss](https://tailwindcss.com/)
   - [daisyUI](https://daisyui.com/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [wagmi](https://wagmi.sh/)
 - [vite](https://vitejs.dev/)
 
 ### Tools
