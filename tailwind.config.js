@@ -3,6 +3,13 @@ module.exports = {
   content: ["./dist/**/*.html", "./src/**/*.{js,jsx,ts,tsx}", "./*.html"],
   variants: {},
   plugins: [require("daisyui")],
+  theme: {
+    extend: {
+      colors: {
+        "idem-yellow": "#ffb300"
+      }
+    }
+  },
   daisyui: {
     themes: [
       {
