@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames";
 
 type Props = {
   title: string;
@@ -9,19 +10,13 @@ type Props = {
 const Button: React.FC<Props> = (props) => {
   const { title, color, onClick } = props;
 
-  let background,
-    text = "";
-
-  switch (color) {
-    case "yellow":
-      background = "bg-idem-yellow";
-      text = "text-black";
-      break;
-  }
+  const buttonStyles = classnames({
+    "bg-idem-yellow text-black": color == "yellow"
+  });
 
   return (
     <button
-      className={`py-2 px-3 font-bold rounded-md hover:scale-[1.15] duration-200 transition-transform ${background} ${text}`}
+      className={`py-2 px-3 font-bold rounded-md hover:scale-[1.15] duration-200 transition-transform ${buttonStyles}`}
       onClick={onClick}
     >
       {title}
