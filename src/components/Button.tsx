@@ -2,19 +2,26 @@ import React from "react";
 
 type Props = {
   title: string;
-  colors: {
-    text: string;
-    background: string;
-  };
+  color: string;
   onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 };
 
 const Button: React.FC<Props> = (props) => {
-  const { title, colors, onClick } = props;
+  const { title, color, onClick } = props;
+
+  let background,
+    text = "";
+
+  switch (color) {
+    case "yellow":
+      background = "bg-idem-yellow";
+      text = "text-black";
+      break;
+  }
 
   return (
     <button
-      className={`py-2 px-3 font-bold rounded-md bg-${colors.background} text-${colors.text} hover:scale-[1.15] duration-200 transition-transform`}
+      className={`py-2 px-3 font-bold rounded-md hover:scale-[1.15] duration-200 transition-transform ${background} ${text}`}
       onClick={onClick}
     >
       {title}

@@ -35,14 +35,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       <div className="w-full flex justify-end items-center">
-        <Button
-          title="QR CODE"
-          colors={{
-            text: "black",
-            background: "idem-yellow"
-          }}
-          onClick={openQrCode}
-        />
+        <Button title="QR CODE" color="yellow" onClick={openQrCode} />
       </div>
     </div>
   );
