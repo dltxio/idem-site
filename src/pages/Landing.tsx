@@ -8,8 +8,8 @@ const Landing: React.FC = () => {
         <div className="w-4/5">
           <div className="flex flex-col">
             <h1 className="font-black text-[14rem] drop-shadow-xl">IDEM</h1>
-            <h2 className="text-3xl relative left-4 bottom-14 max-w-[30ch]">
-              The Faster and Easier way to do KYC.
+            <h2 className="font-bold text-[1.47rem] tracking-wide relative left-4 bottom-14">
+              THE FASTER AND EASIER WAY TO DO KYC
             </h2>
           </div>
         </div>
