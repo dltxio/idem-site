@@ -13,7 +13,7 @@ const Modal: React.FC<Props> = (props) => {
 
   return (
     <div className={`modal ${isModalOpen ? "modal-open" : ""}`}>
-      <div className="modal-box flex flex-col bg-black border-[1.5px] border-white/20 box-border py-6 px-[1.75rem]">
+      <div className="modal-box flex flex-col bg-idem-black border-[1.5px] border-idem-white/20 box-border py-6 px-[1.75rem]">
         <div className="w-full flex flex-col justify-center items-center">
           {props.children}
         </div>

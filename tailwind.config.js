@@ -8,7 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "idem-yellow": "#ffb300"
+        "idem-yellow": "#ffb300",
+        "idem-black": "#0e0e0e",
+        "idem-white": "#fffaf6"
       },
       boxShadow: {
         top: "0 -12px 64px -18px rgba(0,0,0,0.12);"
