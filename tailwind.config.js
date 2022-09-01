@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   mode: "jit",
   content: ["./dist/**/*.html", "./src/**/*.{js,jsx,ts,tsx}", "./*.html"],
@@ -7,6 +9,12 @@ module.exports = {
     extend: {
       colors: {
         "idem-yellow": "#ffb300"
+      },
+      boxShadow: {
+        top: "0 -12px 64px -18px rgba(0,0,0,0.12);"
+      },
+      fontFamily: {
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans]
       }
     }
   },
