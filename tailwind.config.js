@@ -24,8 +24,8 @@ module.exports = {
         "idem-black": "#0e0e0e",
         "idem-white": "#fffaf6"
       },
-      boxShadow: {
-        top: "0 -12px 64px -18px rgba(0,0,0,0.12);"
+      dropShadow: {
+        hexagon: "11px 6px 0 #0e0e0e"
       },
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans]
