@@ -4,7 +4,19 @@ module.exports = {
   mode: "jit",
   content: ["./dist/**/*.html", "./src/**/*.{js,jsx,ts,tsx}", "./*.html"],
   variants: {},
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    require("tailwind-heropatterns")({
+      variants: ["topography"],
+      patterns: [],
+      colors: {
+        default: "#ffb300"
+      },
+      opacity: {
+        default: "0.1"
+      }
+    })
+  ],
   theme: {
     extend: {
       colors: {
@@ -12,11 +24,14 @@ module.exports = {
         "idem-black": "#0e0e0e",
         "idem-white": "#fffaf6"
       },
-      boxShadow: {
-        top: "0 -12px 64px -18px rgba(0,0,0,0.12);"
+      dropShadow: {
+        hexagon: "11px 6px 0 #0e0e0e"
       },
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans]
+      },
+      screens: {
+        "min-hexagon-width": "1805px"
       }
     }
   },

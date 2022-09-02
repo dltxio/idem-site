@@ -19,7 +19,7 @@ const QrCodeModal: React.FC<Props> = (props) => {
       buttonTitle={buttonTitle}
       buttonColor={buttonColor}
     >
-      <h2 className="text-idem-yellow text-lg font-bold tracking-wide">
+      <h2 className="text-idem-yellow text-lg font-bold tracking-wide mb-2">
         Scan this to go to our Testflight page:
       </h2>
       <img src={QrCode} alt="Testflight QR Code" />
