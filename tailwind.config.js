@@ -37,7 +37,7 @@ module.exports = {
       },
       backgroundSize: {
         "block-link": "100% 1rem",
-        "block-link-animate": "100% 7rem"
+        "block-link-animate": "100% 2rem"
       },
       backgroundPosition: {
         "block-link-pos": "0 85%"

@@ -13,7 +13,11 @@ const Phone: React.FC = () => {
         />
       </div>
       <div className="bg-idem-yellow w-[68%] -ml-[84%] mt-[2%] mb-[8%] z-10 rounded-[10%]">
-        <img className="scale-[30%] mt-20" src={IdemLogo} alt="IDEM logo" />
+        <img
+          className="scale-[30%] mt-20 z-50"
+          src={IdemLogo}
+          alt="IDEM logo"
+        />
       </div>
     </div>
   );
