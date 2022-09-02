@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   const linkStyle =
     "cursor-pointer relative before:content-[''] before:absolute before:block before:w-full \
   before:h-[2px] before:bottom-[1px] before:left-0 before:bg-idem-white before:scale-0 before:transition-transform \
-  hover:before:scale-[1] text-lg text-idem-white";
+  hover:before:scale-[1]";
 
   return (
     <>
@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
           IDEM
         </h2>
         <div className="w-full flex justify-center items-center">
-          <div className="flex items-center justify-between gap-x-10">
+          <div className="flex items-center justify-between gap-x-10 text-lg text-idem-white">
             <a
               href={process.env.VITE_DEMO_URL}
               target="_blank"

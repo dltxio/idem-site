@@ -9,8 +9,8 @@ const Hexagons: React.FC = () => {
 
   return (
     <div
-      className="w-1/2 flex mt-24 mr-[14rem] min-hexagon-width:ml-[14rem] \
-      min-hexagon-width:mt-0 min-hexagon-width:mr-0"
+      className="flex relative mb-32 min-hexagon-width:mb-0 top-32 \
+      min-hexagon-width:top-10 left-8 min-hexagon-width:right-8"
     >
       <div className={hexagonContainerStyles}>
         <div className={hexagonStyles}>
