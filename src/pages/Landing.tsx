@@ -21,20 +21,43 @@ const Landing: React.FC = () => {
         </div>
       </div>
       <div className="w-full min-h-[40vh] bg-idem-white bg-hero-topography z-50 box-border overflow-hidden">
-        <div className="flex flex-col min-hexagon-width:flex-row justify-between items-center mt-32 mb-20 mx-20">
-          <div className="ml-10 w-1/2">
-            <h2
-              className="text-idem-black \
-              from-orange-500 to-yellow-400 font-black text-[6rem] leading-[6rem] mb-12"
-            >
-              End-to-end
-              <br />
-              digital identity
-              <br />
-              verification.
-            </h2>
-          </div>
+        <div className="flex flex-col min-hexagon-width:flex-row justify-between items-center p-32">
+          <h2 className="text-idem-black font-black text-[6rem] leading-[6rem]">
+            End-to-end
+            <br />
+            digital identity
+            <br />
+            verification
+          </h2>
           <Hexagons />
+        </div>
+        <div
+          className="w-full flex flex-row-reverse py-32 px-80 bg-idem-black justify-between \
+          bg-hero-plus-idem-white-light"
+        >
+          <h2 className="text-idem-white font-black text-[6rem] leading-[6rem] text-right">
+            Minimise the
+            <br />
+            hassle of KYC
+            <br />
+            compliance
+          </h2>
+          <h2 className="text-idem-white font-black text-[6rem] leading-[6rem]">
+            Fully open
+            <br />
+            source
+            <br />
+            under{" "}
+            <a
+              className="cursor-pointer bg-gradient-to-tl from-orange-500 to-yellow-400 bg-no-repeat \
+              bg-block-link bg-block-link-pos hover:bg-block-link-animate transition-all"
+              href="https://choosealicense.com/licenses/mit/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              MIT
+            </a>
+          </h2>
         </div>
       </div>
       <Phone />

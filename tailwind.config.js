@@ -7,13 +7,15 @@ module.exports = {
   plugins: [
     require("daisyui"),
     require("tailwind-heropatterns")({
-      variants: ["topography"],
+      variants: [],
       patterns: [],
       colors: {
-        default: "#ffb300"
+        default: "#ffb300",
+        "idem-white": "#fffaf6"
       },
       opacity: {
-        default: "0.1"
+        default: "0.1",
+        light: "0.05"
       }
     })
   ],
@@ -32,6 +34,13 @@ module.exports = {
       },
       screens: {
         "min-hexagon-width": "1805px"
+      },
+      backgroundSize: {
+        "block-link": "100% 1rem",
+        "block-link-animate": "100% 7rem"
+      },
+      backgroundPosition: {
+        "block-link-pos": "0 85%"
       }
     }
   },
