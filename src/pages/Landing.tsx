@@ -2,6 +2,10 @@ import React from "react";
 import { PageLayout, Phone, Hexagons } from "../components";
 
 const Landing: React.FC = () => {
+  const linkStyle =
+    "cursor-pointer bg-gradient-to-tl from-orange-500 to-yellow-400 bg-no-repeat \
+  bg-block-link bg-block-link-pos hover:bg-block-link-animate transition-all";
+
   return (
     <PageLayout>
       <div
@@ -44,7 +48,12 @@ const Landing: React.FC = () => {
           </h2>
           <h2 className="text-idem-white font-black text-[6rem] leading-[6rem]">
             Fully{" "}
-            <a>
+            <a
+              className={linkStyle}
+              href="https://github.com/dltxio/idem-mobile"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               open
               <br />
               source
@@ -52,8 +61,7 @@ const Landing: React.FC = () => {
             <br />
             under{" "}
             <a
-              className="cursor-pointer bg-gradient-to-tl from-orange-500 to-yellow-400 bg-no-repeat \
-              bg-block-link bg-block-link-pos hover:bg-block-link-animate transition-all"
+              className={linkStyle}
               href="https://choosealicense.com/licenses/mit/"
               target="_blank"
               rel="noreferrer noopener"
