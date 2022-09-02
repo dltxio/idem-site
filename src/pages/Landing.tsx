@@ -21,7 +21,7 @@ const Landing: React.FC = () => {
         </div>
       </div>
       <div className="w-full min-h-[40vh] bg-idem-white bg-hero-topography z-50 box-border overflow-hidden">
-        <div className="flex flex-col min-hexagon-width:flex-row justify-between items-center my-32 mx-20">
+        <div className="flex flex-col min-hexagon-width:flex-row justify-between items-center mt-32 mb-20 mx-20">
           <div className="ml-10 w-1/2">
             <h2
               className="text-idem-black \
