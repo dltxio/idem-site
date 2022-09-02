@@ -5,6 +5,6 @@ class Api extends HTTPClient {
     this.post<boolean>(`user/verify-email`, { token: token });
 }
 
-const api = new Api(process.env.VITE_APP_PROXY_URL! as string, true);
+const api = new Api(process.env.VITE_APP_PROXY_URL as string, true);
 
 export default api;
