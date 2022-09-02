@@ -43,9 +43,12 @@ const Landing: React.FC = () => {
             compliance
           </h2>
           <h2 className="text-idem-white font-black text-[6rem] leading-[6rem]">
-            Fully open
-            <br />
-            source
+            Fully{" "}
+            <a>
+              open
+              <br />
+              source
+            </a>
             <br />
             under{" "}
             <a
