@@ -33,7 +33,7 @@ yarn test
 
 ## PGP Public Key
 
-Public Key for support@idem.com.au
+Public Key for support@idem.com.au `7A9AC071C29FE0330DE23A465883C26E353E8480`
 
 ```text
 -----BEGIN PGP PUBLIC KEY BLOCK-----
