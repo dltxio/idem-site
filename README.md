@@ -33,7 +33,7 @@ yarn test
 
 ## PGP Public Key
 
-```
+```text
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQGNBGMIYC0BDADI5CaGsX28Z4OR7/ES1G+lfQz5tseWkYZ6zXfVnauf+LxqGbCR
