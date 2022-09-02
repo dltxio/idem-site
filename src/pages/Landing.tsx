@@ -1,5 +1,5 @@
 import React from "react";
-import { PageLayout, Phone, Hexagons } from "../components";
+import { PageLayout, Phone, Hexagons, Footer } from "../components";
 
 const Landing: React.FC = () => {
   const linkStyle =
@@ -27,9 +27,9 @@ const Landing: React.FC = () => {
       <div className="w-full min-h-[40vh] bg-idem-white bg-hero-topography z-50 box-border overflow-hidden">
         <div className="flex flex-col min-hexagon-width:flex-row justify-between items-center p-32">
           <h2 className="text-idem-black font-black text-[6rem] leading-[6rem]">
-            End-to-end
+            Decentralised
             <br />
-            digital identity
+            W3C identity
             <br />
             verification
           </h2>
@@ -70,6 +70,7 @@ const Landing: React.FC = () => {
             </a>
           </h2>
         </div>
+        <Footer />
       </div>
       <Phone />
     </PageLayout>

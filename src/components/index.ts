@@ -5,3 +5,4 @@ export { default as Modal } from "./Modal";
 export { default as QrCodeModal } from "./QrCodeModal";
 export { default as Phone } from "./Phone";
 export { default as Hexagons } from "./Hexagons";
+export { default as Footer } from "./Footer";
