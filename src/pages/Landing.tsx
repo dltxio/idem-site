@@ -20,9 +20,9 @@ const Landing: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="w-full min-h-[40vh] bg-[#fffaf6] bg-hero-topography z-50">
-        <div className="flex justify-between items-center my-32 px-20">
-          <div className="ml-10 w-full">
+      <div className="w-full min-h-[40vh] bg-[#fffaf6] bg-hero-topography z-50 box-border overflow-hidden">
+        <div className="flex flex-col min-hexagon-width:flex-row justify-between items-center my-32 mx-20">
+          <div className="ml-10 w-1/2">
             <h2
               className="text-idem-black \
               from-orange-500 to-yellow-400 font-black text-[6rem] leading-[6rem] mb-12"

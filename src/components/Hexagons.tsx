@@ -8,7 +8,7 @@ const Hexagons: React.FC = () => {
   const hexagonContainerStyles = "drop-shadow-hexagon";
 
   return (
-    <div className="w-full flex ml-[14rem]">
+    <div className="w-1/2 flex mt-24 mr-[14rem] min-hexagon-width:ml-[14rem] min-hexagon-width:mt-0 min-hexagon-width:mr-0">
       <div className={hexagonContainerStyles}>
         <div className={hexagonStyles}>
           <span>GPIB</span>

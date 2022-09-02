@@ -29,6 +29,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans]
+      },
+      screens: {
+        "min-hexagon-width": "1805px"
       }
     }
   },
