@@ -4,7 +4,19 @@ module.exports = {
   mode: "jit",
   content: ["./dist/**/*.html", "./src/**/*.{js,jsx,ts,tsx}", "./*.html"],
   variants: {},
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    require("tailwind-heropatterns")({
+      variants: ["topography"],
+      patterns: [],
+      colors: {
+        default: "#ffb300"
+      },
+      opacity: {
+        default: "0.1"
+      }
+    })
+  ],
   theme: {
     extend: {
       colors: {

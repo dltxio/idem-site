@@ -1,5 +1,5 @@
 import React from "react";
-import { PageLayout, Phone } from "../components";
+import { PageLayout, Phone, Hexagons } from "../components";
 
 const Landing: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const Landing: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="w-full min-h-[40vh] bg-[#fffaf6] z-50 shadow-top">
+      <div className="w-full min-h-[40vh] bg-[#fffaf6] bg-hero-topography z-50">
         <div className="flex justify-between items-center my-32 px-20">
           <div className="ml-10 w-full">
             <h2 className="text-idem-black font-black text-[6rem]">
@@ -27,7 +27,7 @@ const Landing: React.FC = () => {
               verification.
             </h2>
           </div>
-          {/* TODO: ADD HEXAGONS OF EXCHANGES */}
+          <Hexagons />
         </div>
       </div>
       <Phone />

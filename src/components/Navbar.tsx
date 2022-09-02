@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <div className="fixed w-full bg-[#0e0e0e] py-4 px-6 flex justify-between items-center shadow-xl z-50">
+      <div className="fixed w-full bg-[#0e0e0e] py-4 px-6 flex justify-between items-center z-50">
         <h2 className="text-3xl font-black tracking-wide w-full text-idem-white">
           IDEM
         </h2>
