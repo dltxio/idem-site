@@ -6,7 +6,7 @@ export const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/verifyemail" element={<VerifyEmail />} />
+        <Route path="/verify-email" element={<VerifyEmail />} />
       </Routes>
     </BrowserRouter>
   );
