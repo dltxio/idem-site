@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
               DEMO
             </a>
             <a
-              href={`mailto:${process.env.VITE_SUPPORT_EMAIL}`}
+              href={`mailto:${process.env.VITE_SUPPORT_EMAIL}?subject=IDEM Support`}
               className={linkStyle}
             >
               SUPPORT
