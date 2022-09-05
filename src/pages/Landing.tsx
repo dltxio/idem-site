@@ -4,7 +4,7 @@ import { PageLayout, Phone, Hexagons, Footer } from "../components";
 const Landing: React.FC = () => {
   const linkStyle =
     "cursor-pointer bg-gradient-to-tl from-orange-500 to-yellow-400 bg-no-repeat \
-  bg-block-link bg-block-link-pos hover:bg-block-link-animate transition-all";
+  bg-block-link bg-block-link-pos lg:hover:bg-block-link-animate transition-all";
 
   return (
     <PageLayout>
@@ -12,7 +12,7 @@ const Landing: React.FC = () => {
         className="w-full pt-32 lg:pt-0 px-10 lg:px-0 min-h-[50vh] md:min-h-[30vh] lg:min-h-[60vh] bg-gradient-to-tl from-orange-500 to-yellow-400 \
         flex flex-col justify-center items-center box-border"
       >
-        <div className="w-full lg:w-4/5 text-center lg:text-left">
+        <div className="w-full lg:w-4/5 text-center xl:text-left">
           <div className="flex flex-col">
             <h1 className="font-black text-[6rem] lg:text-[12rem] text-idem-white">
               IDEM
@@ -52,7 +52,7 @@ const Landing: React.FC = () => {
             Fully{" "}
             <a
               className={linkStyle}
-              href="https://github.com/dltxio/idem-mobile"
+              href={process.env.VITE_REPO_URL}
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -64,7 +64,7 @@ const Landing: React.FC = () => {
             under{" "}
             <a
               className={linkStyle}
-              href="https://choosealicense.com/licenses/mit/"
+              href={process.env.VITE_LICENSE_URL}
               target="_blank"
               rel="noreferrer noopener"
             >
