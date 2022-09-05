@@ -9,7 +9,7 @@ const Hexagons: React.FC = () => {
 
   return (
     <div
-      className="flex relative mb-32 min-hexagon-width:mb-0 top-32 \
+      className="hidden lg:flex relative mb-32 min-hexagon-width:mb-0 top-32 \
       min-hexagon-width:top-10 left-12 min-hexagon-width:-left-6"
     >
       <div className={hexagonContainerStyles}>

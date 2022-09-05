@@ -12,7 +12,7 @@ const Button: React.FC<Props> = (props) => {
   const { title, color, onClick, expands } = props;
 
   const buttonStyles = classnames({
-    "py-2 px-3 font-bold rounded-md": true,
+    "py-2 px-2 lg:px-3 font-bold rounded-md": true,
     "bg-idem-yellow text-idem-black": color == "yellow",
     "hover:scale-[1.15] duration-200 transition-transform": expands
   });
