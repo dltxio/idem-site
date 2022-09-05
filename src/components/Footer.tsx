@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <div className="w-full bg-idem-yellow flex justify-between items-center px-6 py-2 text-idem-black font-bold">
+    <div className="w-full bg-idem-yellow flex flex-col lg:flex-row justify-between items-center px-6 py-2 text-idem-black font-bold">
       <span>
         Copyright DLTx |{" "}
         <a

@@ -4,7 +4,7 @@ import { IdemLogo } from "../assets";
 
 const Phone: React.FC = () => {
   return (
-    <div className="absolute top-[12vh] left-[50vw] w-auto flex max-h-[60vh] overflow-hidden">
+    <div className="absolute top-[12vh] left-[50vw] w-auto max-h-[60vh] overflow-hidden hidden xl:flex">
       <div className="w-full z-20">
         <img
           className="scale-80"
