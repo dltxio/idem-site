@@ -28,10 +28,10 @@ const Landing: React.FC = () => {
       </div>
       <div className="w-full min-h-[40vh] bg-idem-white bg-hero-topography z-50 box-border overflow-hidden">
         <div className="flex flex-col min-hexagon-width:flex-row justify-between items-center p-12 lg:p-32">
-          <h2 className="text-idem-black font-black text-[3rem] lg:text-[6rem] lg:leading-[6rem]">
+          <h2 className="text-idem-black font-black text-[3rem] lg:text-[6rem] lg:leading-[6rem] text-center lg:text-left">
             Decentralised
             <br />
-            W3C identity
+            digital identity
             <br />
             verification
           </h2>
