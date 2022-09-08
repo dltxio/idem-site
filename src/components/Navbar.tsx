@@ -12,7 +12,10 @@ const Navbar: React.FC = () => {
   return (
     <>
       <div className="fixed w-full bg-idem-black py-4 px-3 lg:px-6 flex justify-between items-center z-50">
-        <h2 className="text-3xl font-black tracking-wide w-full text-idem-white hidden md:block">
+        <h2
+          className="text-3xl font-black tracking-wide w-full text-idem-white hidden md:block cursor-pointer"
+          onClick={() => location.assign("/")}
+        >
           IDEM
         </h2>
         <div className="w-full flex justify-center items-center">
