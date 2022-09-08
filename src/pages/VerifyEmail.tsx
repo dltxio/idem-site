@@ -43,7 +43,7 @@ const VerifyEmail: React.FC = () => {
               VERIFY EMAIL
             </h1>
             <div className="px-4 lg:px-12 py-3 lg:py-8 text-center">
-              {token && (
+              {token ? (
                 <>
                   {isVerifying && (
                     <h3 className="text-idem-black text-lg font-bold">
@@ -62,6 +62,10 @@ const VerifyEmail: React.FC = () => {
                     )
                   )}
                 </>
+              ) : (
+                <span className="bg-red-600 text-idem-white px-3 py-2 rounded-lg text-lg">
+                  No Token provided
+                </span>
               )}
             </div>
           </div>
