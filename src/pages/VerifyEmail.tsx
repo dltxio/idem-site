@@ -21,7 +21,6 @@ const VerifyEmail: React.FC = () => {
     api
       .verifyEmail(token)
       .then((result) => {
-        console.log(result);
         setResult(result);
         setIsVerifying(false);
       })
@@ -44,24 +43,23 @@ const VerifyEmail: React.FC = () => {
             </h1>
             <div className="px-4 lg:px-12 py-3 lg:py-8 text-center">
               {token ? (
-                <>
-                  {isVerifying && (
-                    <h3 className="text-idem-black text-lg font-bold">
-                      Verifying...
-                    </h3>
-                  )}
-                  {result ? (
-                    <p className="bg-gradient-to-tl from-orange-500 to-yellow-400 text-idem-white font-bold px-3 py-2 rounded-lg text-2xl shadow-lg">
-                      You have been successfully verified, welcome to IDEM
-                    </p>
-                  ) : (
-                    error && (
-                      <p className="bg-red-600 text-idem-white px-3 py-2 rounded-lg text-lg">
-                        {error.message}
-                      </p>
-                    )
-                  )}
-                </>
+                isVerifying ? (
+                  <h3 className="text-idem-black text-lg font-bold">
+                    Verifying...
+                  </h3>
+                ) : result ? (
+                  <p className="bg-gradient-to-tl from-orange-500 to-yellow-400 text-idem-white font-bold px-3 py-2 rounded-lg text-2xl shadow-lg">
+                    You have been successfully verified, welcome to IDEM
+                  </p>
+                ) : error ? (
+                  <p className="bg-red-600 text-idem-white px-3 py-2 rounded-lg text-lg">
+                    {error.message}
+                  </p>
+                ) : (
+                  <p className="bg-red-600 text-idem-white px-3 py-2 rounded-lg text-lg">
+                    Failed to verify token
+                  </p>
+                )
               ) : (
                 <span className="bg-red-600 text-idem-white px-3 py-2 rounded-lg text-lg">
                   No Token provided
@@ -70,19 +68,6 @@ const VerifyEmail: React.FC = () => {
             </div>
           </div>
         </Draggable>
-      </div>
-      <div className="absolute bottom-0 w-full text-center lg:text-right px-5 py-3 text-idem-white font-bold">
-        <span>
-          Made with ❤️ by{" "}
-          <a
-            className="underline underline-offset-2 decoration-2"
-            href="https://brettvanniekerk.eth.limo/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            brettvanniekerk.eth
-          </a>
-        </span>
       </div>
     </div>
   );
