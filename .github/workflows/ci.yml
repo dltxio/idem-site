@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: "16"
+          node-version: ${{ steps.package-engines-versions.outputs.nodeVersion }}
       - run: yarn
       - run: yarn lint
   build:
@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: "16"
+          node-version: ${{ steps.package-engines-versions.outputs.nodeVersion }}
       - run: yarn
       - run: yarn build
   test:
@@ -34,7 +34,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: "16"
+          node-version: ${{ steps.package-engines-versions.outputs.nodeVersion }}
       - run: yarn
       - run: yarn test
   lighthouse:
@@ -45,6 +45,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: "16"
+          node-version: ${{ steps.package-engines-versions.outputs.nodeVersion }}
       - run: yarn
       - run: yarn lighthouse
