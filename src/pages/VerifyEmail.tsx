@@ -11,7 +11,7 @@ type Error = {
 const VerifyEmail: React.FC = () => {
   const { search } = useLocation();
   const [isVerifying, setIsVerifying] = useState(true);
-  const [result, setResult] = useState<boolean>();
+  const [result, setResult] = useState(false);
   const [error, setError] = useState<Error>();
   const query = useMemo(() => new URLSearchParams(search), [search]);
   const token = query.get("token");
