@@ -57,7 +57,7 @@ const VerifyEmail: React.FC = () => {
                   </p>
                 ) : (
                   <p className="bg-red-600 text-idem-white px-3 py-2 rounded-lg text-lg">
-                    Error: failed to verify token
+                    Failed to verify token
                   </p>
                 )
               ) : (
