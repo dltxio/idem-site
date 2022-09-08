@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - development
 jobs:
   lint:
     runs-on: ubuntu-18.04
@@ -36,3 +37,14 @@ jobs:
           node-version: "14"
       - run: yarn
       - run: yarn test
+  lighthouse:
+    runs-on: ubuntu-18.04
+    needs: build
+    name: Lighthouse
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "14"
+      - run: yarn
+      - run: yarn lighthouse
