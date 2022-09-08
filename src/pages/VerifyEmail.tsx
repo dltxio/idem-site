@@ -52,12 +52,12 @@ const VerifyEmail: React.FC = () => {
                   )}
                   {result ? (
                     <p className="bg-gradient-to-tl from-orange-500 to-yellow-400 text-idem-white font-bold px-3 py-2 rounded-lg text-2xl shadow-lg">
-                      Result : {JSON.stringify(result)}
+                      You have been successfully verified, welcome to IDEM
                     </p>
                   ) : (
                     error && (
                       <p className="bg-red-600 text-idem-white px-3 py-2 rounded-lg text-lg">
-                        Error : {error.message}
+                        {error.message}
                       </p>
                     )
                   )}
