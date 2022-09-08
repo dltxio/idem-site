@@ -69,19 +69,6 @@ const VerifyEmail: React.FC = () => {
           </div>
         </Draggable>
       </div>
-      <div className="absolute bottom-0 w-full text-center lg:text-right px-5 py-3 text-idem-white font-bold">
-        <span>
-          Made with ❤️ by{" "}
-          <a
-            className="underline underline-offset-2 decoration-2"
-            href="https://brettvanniekerk.eth.limo/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            brettvanniekerk.eth
-          </a>
-        </span>
-      </div>
     </div>
   );
 };
