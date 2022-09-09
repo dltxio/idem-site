@@ -10,9 +10,9 @@
     "format": "prettier --write './'",
     "format-staged": "pretty-quick --staged",
     "postinstall": "husky install",
-    "test": "cross-env TS_NODE_PROJECT='./tsconfig.test.json' nyc --reporter=lcov mocha",
+    "test": "cross-env TS_NODE_PROJECT='./tsconfig.test.json' nyc --reporter=lcov mocha && yarn lighthouse:local",
     "lighthouse": "lhci autorun",
-    "lighthouse:build": "yarn build && lhci autorun"
+    "lighthouse:local": "lhci autorun --config=lighthouserc.local.json"
   },
   "dependencies": {
     "axios": "^0.24.0",

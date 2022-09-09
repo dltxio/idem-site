@@ -2,7 +2,9 @@
   "ci": {
     "collect": {
       "numberOfRuns": 3,
-      "url": ["https://uat.idem.com.au"],
+      "startServerCommand": "yarn serve",
+      "startServerReadyPattern": "Local:",
+      "url": ["http://localhost:3000"],
       "isSinglePageApplication": true,
       "settings": {
         "onlyCategories": [
