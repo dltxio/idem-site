@@ -13,10 +13,12 @@ const Navbar: React.FC = () => {
     <>
       <div className="fixed w-full bg-idem-black py-4 px-3 lg:px-6 flex justify-between items-center z-50">
         <h2 className="text-3xl font-black tracking-wide w-full text-idem-white hidden md:block">
-          IDEM
+          <span className="cursor-pointer" onClick={() => location.assign("/")}>
+            IDEM
+          </span>
         </h2>
         <div className="w-full flex justify-center items-center">
-          <div className="flex items-center justify-between gap-x-10 text-base lg:text-lg text-idem-white">
+          <div className="flex items-center justify-between gap-x-3 lg:gap-x-14 text-base lg:text-lg text-idem-white">
             <a
               href={process.env.VITE_DEMO_URL}
               target="_blank"
@@ -30,6 +32,14 @@ const Navbar: React.FC = () => {
               className={linkStyle}
             >
               SUPPORT
+            </a>
+            <a
+              href="/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkStyle}
+            >
+              PRIVACY
             </a>
           </div>
         </div>

@@ -10,7 +10,9 @@
     "format": "prettier --write './'",
     "format-staged": "pretty-quick --staged",
     "postinstall": "husky install",
-    "test": "cross-env TS_NODE_PROJECT='./tsconfig.test.json' nyc --reporter=lcov mocha"
+    "test": "cross-env TS_NODE_PROJECT='./tsconfig.test.json' nyc --reporter=lcov mocha",
+    "lighthouse": "lhci autorun",
+    "lighthouse:local": "lhci autorun --config=lighthouserc.local.json"
   },
   "dependencies": {
     "axios": "^0.24.0",
@@ -22,6 +24,7 @@
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@heroicons/react": "^1.0.5",
+    "@lhci/cli": "^0.9.0",
     "@tailwindcss/forms": "^0.4.0",
     "@types/chai": "^4.3.0",
     "@types/mocha": "^9.1.0",
@@ -50,6 +53,7 @@
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
     "pretty-quick": "^3.1.3",
+    "react-draggable": "^4.4.5",
     "react-router-dom": "^6.3.0",
     "tailwind-heropatterns": "^0.0.8",
     "tailwindcss": "^3.0.7",

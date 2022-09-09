@@ -22,7 +22,13 @@ const QrCodeModal: React.FC<Props> = (props) => {
       <h2 className="text-idem-yellow text-lg font-bold tracking-wide mb-2">
         Scan this to go to our Testflight page:
       </h2>
-      <img src={QrCode} alt="Testflight QR Code" />
+      <img
+        src={QrCode}
+        alt="Testflight QR Code"
+        className="mb-4"
+        width="682px"
+        height="680px"
+      />
     </Modal>
   );
 };
