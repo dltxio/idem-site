@@ -12,7 +12,7 @@
     "postinstall": "husky install",
     "test": "cross-env TS_NODE_PROJECT='./tsconfig.test.json' nyc --reporter=lcov mocha",
     "lighthouse": "lhci autorun",
-    "lighthouse:build": "yarn build && lhci autorun"
+    "lighthouse:local": "lhci autorun --config=lighthouserc.local.json"
   },
   "dependencies": {
     "axios": "^0.24.0",
