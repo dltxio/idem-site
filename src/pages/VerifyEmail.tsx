@@ -34,14 +34,14 @@ const VerifyEmail: React.FC = () => {
     <div className="min-w-screen min-h-screen flex flex-col justify-start items-center bg-idem-black bg-hero-plus-idem-white-light box-border">
       <div className="w-full h-screen flex flex-col justify-center items-center">
         <Draggable bounds="parent" handle=".handle">
-          <div className="w-[90vw] md:w-auto rounded-2xl shadow-2xl bg-idem-white bg-hero-topography flex flex-col justify-center items-center">
+          <div className="w-[90vw] md:w-auto rounded-2xl shadow-2xl bg-idem-white bg-hero-topography flex flex-col justify-center items-center z-50">
             <h1
-              className="px-12 py-4 text-center text-2xl lg:text-3xl font-bold text-idem-white w-full bg-gradient-to-tl \
+              className="px-12 py-4 text-center text-2xl md:text-3xl font-bold text-idem-white w-full bg-gradient-to-tl \
               from-orange-500 to-yellow-400 rounded-t-2xl select-none handle xl:cursor-move"
             >
               VERIFY EMAIL
             </h1>
-            <div className="px-4 lg:px-12 py-3 lg:py-8 text-center">
+            <div className="px-4 md:px-12 py-3 md:py-8 text-center">
               {token ? (
                 isVerifying ? (
                   <h3 className="text-idem-black text-lg font-bold">
@@ -68,6 +68,14 @@ const VerifyEmail: React.FC = () => {
             </div>
           </div>
         </Draggable>
+      </div>
+      <div className="absolute w-full md:w-auto text-center bottom-0 md:top-0 md:left-0">
+        <div
+          className="m-4 bg-gradient-to-tl from-orange-500 to-yellow-400 px-3 py-2 text-idem-white text-xl font-bold rounded-lg cursor-pointer shadow-xl"
+          onClick={() => location.assign("/")}
+        >
+          Back to IDEM
+        </div>
       </div>
     </div>
   );
