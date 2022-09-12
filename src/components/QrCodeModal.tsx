@@ -15,7 +15,7 @@ const QrCodeModal: React.FC<Props> = (props) => {
   const { isModalOpen, setIsModalOpen, buttonTitle, buttonColor } = props;
 
   const appstore = process.env.VITE_APPSTORE_URL;
-  if (!appstore) throw new Error("Error: no testflight url provided in env!");
+  if (!appstore) throw new Error("Error: no appstore url provided in env!");
 
   return (
     <Modal
