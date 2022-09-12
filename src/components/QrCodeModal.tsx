@@ -1,6 +1,7 @@
 import React from "react";
 import { Modal } from "../components";
-import QrCode from "../static/qr-code.png";
+import QrCode from "react-qr-code";
+import { useWindowSize } from "../hooks";
 
 type Props = {
   isModalOpen: boolean;
@@ -10,7 +11,11 @@ type Props = {
 };
 
 const QrCodeModal: React.FC<Props> = (props) => {
+  const size = useWindowSize();
   const { isModalOpen, setIsModalOpen, buttonTitle, buttonColor } = props;
+
+  const testflight = process.env.VITE_TESTFLIGHT_URL;
+  if (!testflight) throw new Error("Error: no testflight url provided in env!");
 
   return (
     <Modal
@@ -19,16 +24,33 @@ const QrCodeModal: React.FC<Props> = (props) => {
       buttonTitle={buttonTitle}
       buttonColor={buttonColor}
     >
-      <h2 className="text-idem-yellow text-lg font-bold tracking-wide mb-2">
-        Scan this to go to our Testflight page:
-      </h2>
-      <img
-        src={QrCode}
-        alt="Testflight QR Code"
-        className="mb-4"
-        width="682px"
-        height="680px"
-      />
+      {size.width < 1200 ? (
+        <>
+          <a
+            className="mb-4 bg-gradient-to-tl from-orange-500 to-yellow-400 px-3 py-2 text-idem-white text-xl font-bold rounded-lg cursor-pointer shadow-xl w-full text-center"
+            href={testflight}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GO TO APP STORE
+          </a>
+        </>
+      ) : (
+        <>
+          <h2 className="text-idem-yellow text-lg font-bold tracking-wide mb-2">
+            Scan this to go to our Testflight page:
+          </h2>
+          <div className="m-4">
+            <QrCode
+              bgColor="#fffaf6"
+              fgColor="#0e0e0e"
+              level="H"
+              size={380}
+              value={testflight}
+            />
+          </div>
+        </>
+      )}
     </Modal>
   );
 };
