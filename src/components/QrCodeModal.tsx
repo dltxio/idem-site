@@ -40,7 +40,7 @@ const QrCodeModal: React.FC<Props> = (props) => {
       ) : (
         <>
           <h2 className="text-idem-yellow text-lg font-bold tracking-wide mb-2">
-            Scan this to go to our Testflight page:
+            Scan this to go to the App Store:
           </h2>
           <div className="m-4">
             <QrCode

@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
         </div>
         <div className="w-full flex justify-end items-center">
           <Button
-            title="JOIN TESTFLIGHT"
+            title="GO TO APP STORE"
             color="yellow"
             onClick={() => setIsModalOpen(true)}
             expands
