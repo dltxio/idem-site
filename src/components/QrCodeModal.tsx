@@ -27,7 +27,9 @@ const QrCodeModal: React.FC<Props> = (props) => {
       {size.width < 1200 ? (
         <>
           <a
-            className="mb-4 bg-gradient-to-tl from-orange-500 to-yellow-400 px-3 py-2 text-idem-white text-xl font-bold rounded-lg cursor-pointer shadow-xl w-full text-center"
+            className="mb-4 bg-gradient-to-tl from-orange-500 to-yellow-400 px-3 py-2 \
+            text-idem-white text-xl font-bold rounded-lg cursor-pointer shadow-xl w-full \
+            text-center"
             href={testflight}
             target="_blank"
             rel="noopener noreferrer"
