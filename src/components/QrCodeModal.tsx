@@ -14,8 +14,8 @@ const QrCodeModal: React.FC<Props> = (props) => {
   const size = useWindowSize();
   const { isModalOpen, setIsModalOpen, buttonTitle, buttonColor } = props;
 
-  const testflight = process.env.VITE_APPSTORE_URL;
-  if (!testflight) throw new Error("Error: no testflight url provided in env!");
+  const appstore = process.env.VITE_APPSTORE_URL;
+  if (!appstore) throw new Error("Error: no testflight url provided in env!");
 
   return (
     <Modal
@@ -30,7 +30,7 @@ const QrCodeModal: React.FC<Props> = (props) => {
             className="mb-4 bg-gradient-to-tl from-orange-500 to-yellow-400 px-3 py-2 \
             text-idem-white text-xl font-bold rounded-lg cursor-pointer shadow-xl w-full \
             text-center"
-            href={testflight}
+            href={appstore}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -48,7 +48,7 @@ const QrCodeModal: React.FC<Props> = (props) => {
               fgColor="#0e0e0e"
               level="H"
               size={380}
-              value={testflight}
+              value={appstore}
             />
           </div>
         </>
