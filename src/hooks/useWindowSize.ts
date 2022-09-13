@@ -7,6 +7,13 @@ const useWindowSize = () => {
   });
 
   useLayoutEffect(() => {
+    // set initial size
+    setSize({
+      width: window.innerWidth,
+      height: window.innerHeight
+    });
+
+    // add resize event listener
     window.addEventListener("resize", () =>
       setSize({
         width: window.innerWidth,
@@ -14,6 +21,7 @@ const useWindowSize = () => {
       })
     );
 
+    // remove listener when unmounted
     return () =>
       window.removeEventListener("resize", () =>
         setSize({
