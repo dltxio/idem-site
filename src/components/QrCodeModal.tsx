@@ -24,7 +24,7 @@ const QrCodeModal: React.FC<Props> = (props) => {
       buttonTitle={buttonTitle}
       buttonColor={buttonColor}
     >
-      {size.width < 1200 ? (
+      {size.width > 1200 ? (
         <>
           <a
             className="mb-4 bg-gradient-to-tl from-orange-500 to-yellow-400 px-3 py-2 \
