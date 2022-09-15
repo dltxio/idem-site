@@ -31,6 +31,10 @@ yarn dev
 yarn test
 ```
 
+## Ethereum Address
+
+`0xB35662F7Ac34a62E122C77fE90BAb74443e71b00`
+
 ## PGP Public Key
 
 Public Key for support@idem.com.au `7A9AC071C29FE0330DE23A465883C26E353E8480`
