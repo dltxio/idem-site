@@ -12,7 +12,8 @@ const Footer: React.FC = () => {
           rel="noopener noreferrer"
         >
           PGP Public Key
-        </a>
+        </a>{" "}
+        | <a>0xB35662F7Ac34a62E122C77fE90BAb74443e71b00</a>
       </span>
     </div>
   );
