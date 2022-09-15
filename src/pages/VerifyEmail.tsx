@@ -35,7 +35,7 @@ const VerifyEmail: React.FC = () => {
         <div className="w-[90vw] md:w-auto rounded-2xl shadow-2xl bg-idem-white bg-hero-topography flex flex-col justify-center items-center z-50">
           <h1
             className="px-12 py-4 text-center text-2xl md:text-3xl font-bold text-idem-white w-full bg-gradient-to-tl \
-            from-orange-500 to-yellow-400 rounded-t-2xl select-none xl:cursor-move"
+            from-orange-500 to-yellow-400 rounded-t-2xl select-none"
           >
             VERIFY EMAIL
           </h1>
