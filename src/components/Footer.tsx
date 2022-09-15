@@ -14,17 +14,14 @@ const Footer: React.FC = () => {
           PGP Public Key
         </a>
       </span>
-      <span>
-        Checkout IDEM on:{" "}
-        <a
-          className="underline underline-offset-2 decoration-2"
-          href={`https://etherscan.io/address/${process.env.VITE_ETH_ADDRESS}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Etherscan
-        </a>
-      </span>
+      <a
+        className="underline underline-offset-2 decoration-2"
+        href={`https://etherscan.io/address/0xB35662F7Ac34a62E122C77fE90BAb74443e71b00`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        0xB35662F7Ac34a62E122C77fE90BAb74443e71b00
+      </a>
     </div>
   );
 };
